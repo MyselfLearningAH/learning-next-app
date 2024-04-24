@@ -7,7 +7,7 @@ const Redux = () => {
 
   const theme = useAppSelector(state => state.theme.activeTheme)
   const activePageDetails = useAppSelector(state => state.theme.activePageDetails)
-  console.log(activePageDetails)
+
   return (
     <div className={`p-4 ${theme}`} style={{height: "89.5vh"}}>
       <div className='flex mb-8'>

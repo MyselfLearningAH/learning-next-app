@@ -1,15 +1,8 @@
 'use client'
-
-// appRouter
-import { useAppDispatch, useAppSelector } from '@/app/approuter/_lib/hooks'
-import { changePage, switchTheme } from '@/app/approuter/_lib/slices/themeSlices'
 import { NAVLIST } from '@/constant/constant'
-
-
 // pageRouter
-// import { useAppDispatch, useAppSelector } from '@/pages/lib/hooks'
-// import { changePage, switchTheme } from '@/pages/lib/slices/themeSlices'
-// import { changePage, switchTheme } from '@/pagess/lib/slices/themeSlices'
+import { useAppDispatch, useAppSelector } from '@/pages/lib/hooks'
+import { changePage, switchTheme } from '@/pages/lib/slices/themeSlices'
 import React from 'react'
 
 const ReduxNavbar = () => {
