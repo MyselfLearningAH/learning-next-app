@@ -18,31 +18,31 @@ export const NAVLIST = [
     {
         name : "Usage Guide",
         to : "",
-        value: 2
+        value: 3
     },
     {
         name : "API",
         to : "",
-        value: 3
+        value: 4
     },
     {
         name : "FAQ",
         to : "",
-        value: 4
+        value: 5
     },
     {
         name : "Best Practices",
         to : "",
-        value: 5
+        value: 6
     },
     {
         name : "GitHub",
         to : "",
-        value: 6
+        value: 7
     },
     {
         name : "Need Help?",
         to : "",
-        value: 7
+        value: 8
     },
 ]
