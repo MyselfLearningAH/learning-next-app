@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* THEME SETTINGS */
+
+.cstheme .theme-light{
+  background-color: white;
+}
+
+.cstheme .theme-light p, .cstheme .theme-light a, .cstheme .theme-light h1, .cstheme .theme-light h2, .cstheme .theme-light h3{
+  color: black;
+}
+
+.cstheme .theme-light p:hover , .cstheme .theme-light a:hover{
+  color: #ba8fff;
+}
+
+.cstheme .theme-dark{
+  background-color: black;
+}
+
+.cstheme .theme-dark p , .cstheme .theme-dark a, .cstheme .theme-dark h1, .cstheme .theme-dark h2, .cstheme .theme-dark h3{
+  color: white;
+}
+
+.cstheme .theme-dark p:hover , .cstheme .theme-dark a:hover{
+  color: #ba8fff;
+}
+
+.cstheme .theme-blue-classic{
+  background-color: blueviolet;
+}
+
+.cstheme .theme-blue-classic p , .cstheme .theme-blue-classic a, .cstheme .theme-blue-classic h1, .cstheme .theme-blue-classic h2, .cstheme .theme-blue-classic h3{
+  color: skyblue;
+}
+
+.cstheme .theme-blue-classic p:hover , .cstheme .theme-blue-classic a:hover{
+  color: darkblue;
+}
+
+.cstheme .theme-light h1.title, .cstheme .theme-dark h1.title, .cstheme .theme-blue-classic h1.title {
+  font-size : 45px;
+  font-weight: bold;
+}
+
+.cstheme .theme-light h2.title, .cstheme .theme-dark h2.title, .cstheme .theme-blue-classic h2.title {
+  font-size : 35px;
+  font-weight: bold;
+}
+
+.cstheme .theme-light h3.title, .cstheme .theme-dark h3.title, .cstheme .theme-blue-classic h3.title {
+  font-size : 30px;
+  font-weight: bold;
+}
