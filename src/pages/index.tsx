@@ -8,15 +8,14 @@ const Index = () => {
 
   const router = useRouter();
 
-  const count = useAppSelector(state => state.counter.value)
-  const dispatch = useAppDispatch()
+  setTimeout(() => {
+    router.push('/redux')
+  },3000)
 
   return (
-    <div>
-      Learning Redux
-      Counter = {count};
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
+    <div className='p-4'>
+      <p className='text-black'>Learning Redux....</p>
+      <p className='text-black'>Moving to /redux Route</p>
     </div>
   )
 }
